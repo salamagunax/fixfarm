@@ -493,7 +493,7 @@ SetGlobal("setting up auto execute")
 if EF.Queue then
     local FileName = "JDRS/AutoExecute"
     if isfile(FileName) then
-        EF.Queue([[loadstring(game:HttpGet("https://raw.githubusercontent.com/salamagunax/godoffarm/main/fast"))()]])
+        EF.Queue([[loadstring(game:HttpGet("https://raw.githubusercontent.com/salamagunax/fixfarm/refs/heads/main/fixy"))()]])
         SV.AlreadyQueued = true
     end
 end
@@ -7029,7 +7029,7 @@ Toggles.AutoScriptToggle:OnChanged(function(ChangedValue) -- inject script
         end
         if not SV.AlreadyQueued then
             if EF.Queue then
-                EF.Queue([[loadstring(game:HttpGet("https://raw.githubusercontent.com/salamagunax/godoffarm/main/fast"))()]])
+                EF.Queue([[loadstring(game:HttpGet("https://raw.githubusercontent.com/salamagunax/fixfarm/refs/heads/main/fixy"))()]])
             end
         end
     else
